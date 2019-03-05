@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Word App</title>
+</head>
+<style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.center {
+    margin: 5% auto;
+    text-align: center;
+    width: 100%;
+}
+.border {
+    border: 2px solid black;
+    border-radius: 4px;
+    display: inline-block;
+}
+.bigbox {
+    width: 40%;
+    margin: 0.5%;
+}
+</style>
+<body>
+    <div class="center">
+        <h4 >Random Word (attempt #{{request.session.count}})</h4>
+        <h1 class="bigbox border">{{rand}}</h1>
+        <form action='/random_word'>
+            <button>Generate</button>
+        </form>
+        <form action='/random_word/reset'>
+            <button>Reset</button>
+        </form>
+    </div>
+</body>
+</html>

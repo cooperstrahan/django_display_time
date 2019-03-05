@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.center {
+    margin: 5% auto;
+    text-align: center;
+    width: 100%;
+}
+.border {
+    border: 2px solid black;
+    border-radius: 4px;
+    display: inline-block;
+}
+.bigbox {
+    width: 40%;
+    margin: 0.5%;
+}
